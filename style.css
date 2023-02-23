@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./images/pattern-background-desktop.svg);
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display';
+}
+
+.app{
+    margin: 30px;
+}
+
+.info{
+    border-radius: 15px;
+    width: 450px;
+    text-align: center;
+    justify-content: center;
+    background-color: hsl(225, 100%, 98%) ;
+}
+
+.info-img{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.info-h1{
+    font-weight: 900;
+    margin-top: 40px;
+    font-size: 32px;
+    line-height: 28px;
+    font-style:normal;
+    color:  hsl(223, 47%, 23%);
+}
+
+.info-para{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 30px 50px ;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    padding: 10px;
+    align-items: center;
+    background-color: hsl(224, 52%, 96%);
+    border-radius: 10px;
+    width: 80%;
+}
+
+.price{
+    margin-left: 10px;
+}
+
+.price-para{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: hsl(224, 23%, 55%);
+}
+
+.price-h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color:  hsl(223, 47%, 23%);
+}
+
+.plan-a{
+    margin-left: 90px;
+    color: hsl(245, 75%, 52%);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.plan-a:hover{
+    text-decoration: none;
+    color: hsl(215, 51%, 70%);
+}
+
+.btn{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-btn{
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.info-btn:hover{
+    background-color: hsl(215, 51%, 70%);
+}
+
+.cancel-btn{
+    margin: 30px auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: hsl(224, 23%, 55%);
+    border: none;
+    background-color: hsl(225, 100%, 98%);
+    cursor: pointer;
+}
+
+.cancel-btn:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+.foot, .foot a{
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: hsl(223, 47%, 23%);
+    margin: 45px auto;
+    justify-content: center;
+}
+
+.foot a{
+    color: hsl(245, 75%, 52%);
+}
+
+@media screen and (max-width: 490px){
+
+    body{
+        justify-content: start;
+        background-image: url(./images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+    }
+
+    .info{
+        max-width: 90%;
+    }
+
+    .info-para{
+        margin: 30px 70px;
+    }
+
+    .foot{
+        width: 60%;
+    }
+}
